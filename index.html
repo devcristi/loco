@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>  
+    <nav data-toggled="false" data-transitionable="false">
+        <a href="#home" id="nav-logo-section" class"nav-section>
+            <div>
+            </div>
+        </a>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="#about">ABOUT</a>
+                <a href="#work">WORK</a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a href="#contact">
+                    <i class="fa-regular fa-address-book"></i>
+                </a>
+                <a href="https://github.com/devcristi" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cristian-daniel-boabes-2a2497248/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div id="nav-resume-section" class="nav-section">
+                <a href="./cv.docx">RESUME</a>
+            </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>      
+    
+    <div data-scroll-container>
+        <section class="home" id="home" data-scroll-container>
+            <div class="home-container" data-scroll-section>
+                <div class="info">
+                    <p>Hello there👋,</p>
+                    <h1>I am Cristi!
+                        <br>
+                        I don't browse websites. I
+                        <span class="magic">
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-text">create</span>
+                        </span> them.
+                    </h1>
+                    <p>
+                        I'm a full-time student, and ocassionallty a Web Developer.
+                        <br>
+                        Currently, I am open for any collaboration!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about" data-scroll-section>
+            <div class="info-about">
+                <h2>About me</h2>
+                <p data-scroll>
+                    Hello! My name is Cristi and I enjoy learning and building web things.
+                    My passion for programming started back in 2019, my first year of hight-school.
+                    I started with C++ for data structures and algorithms.
+                    Then i discovered the power of Web Development, and how many awesome
+                    things can be built with it.
+                <br>
+                <br>
+                    Fast-forward today, I'm still learning by building this website and other projects for my portfolio.
+                    My main focus these days is to have a solid knowlege of HTML, CSS and JS,
+                    and then to learn some frameorks.
+                </p>            
+                
+                <div class="about-img">
+                    <img src="./cristi.png" alt="">
+                </div>
+            </div>
+
+        </section>  
+        <section class="work" id="work" data-scroll-section>
+            <h1>Take a look at my projects!</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
+                    <h2>Project One</h2>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr />
+                    <div class="project-link">
+                        <button class="project-buttons left">Try it</button>
+                        <button class="project-buttons right">Source code</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
+                    <h2>Project Two</h2>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr />
+                    <div class="project-link">
+                        <button class="project-buttons left">Try it</button>
+                        <button class="project-buttons right">Source code</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
+                    <h2>Project Three</h2>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr />
+                    <div class="project-link">
+                        <button class="project-buttons left">Try it</button>
+                        <button class="project-buttons right">Source code</button>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="contact" id="contact" data-scroll-section>
+            <h1>Get in touch</h1 data-scroll>
+            <p>Good news! I am open for any opportunies! <br>
+                So, if you would like to work with me, <br> or you have any questions, don't be afraid and
+                <br>
+                <a href="mailto:cristiandanielboabes@gmail.com">
+                    <button class="contact-btn">
+                        say hello :)
+                    </button>
+                </a>
+            </p>
+            <div class="links">
+                <ul>
+                    <a href="https://www.linkedin.com/in/cristian-daniel-boabes-2a2497248/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/devcristi" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://codepen.io/cristicalutu-the-decoder" target="_blank">
+                        <i class="fa-brands fa-codepen fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cristian_daniel_mcd/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </ul>
+
+            </div>
+            <!-- <img src="./cristi2.png" alt=""> -->
+            <div class="footer" id="footer">
+                <h3>Designed & Built by Cristian-Daniel Boabes © 2023</h3>
+            </div>
+        </section>  
+    </div>
+    <script src="./index.js"></script>
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+    });
+    </script>
+</body>
+</html>
